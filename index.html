@@ -1,43 +1,243 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<title>TITLE</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	
-	
-	<!-- Font -->
-	
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet">
-	
-	
-	<link href="common-css/ionicons.css" rel="stylesheet">
-	
-	
-	<link rel="stylesheet" href="common-css/jquery.classycountdown.css" />
-		
-	<link href="03-comming-soon/css/styles.css" rel="stylesheet">
-	
-	<link href="03-comming-soon/css/responsive.css" rel="stylesheet">
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Шарипов Марат Кайратович | CV</title>
+	<style>
+		:root {
+			--main-color: #4a90e2;
+			--text-color: #333;
+			--background-color: #f4f4f4;
+			--section-background: #fff;
+			--footer-background: #e8e8e8;
+			--border-color: #ddd;
+			--shadow-color: rgba(0,0,0,0.1);
+		}
+
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: var(--background-color);
+			color: var(--text-color);
+		}
+
+		.resume-container {
+			max-width: 800px;
+			margin: 40px auto;
+			background-color: var(--section-background);
+			padding: 40px;
+			box-shadow: 0 4px 8px var(--shadow-color);
+			border-radius: 10px;
+		}
+
+		.resume-header {
+			border-bottom: 3px solid var(--main-color);
+			padding-bottom: 20px;
+			margin-bottom: 40px;
+		}
+
+		.resume-section {
+			margin-bottom: 40px;
+		}
+
+		.resume-section h2 {
+			color: var(--main-color);
+			border-bottom: 2px solid var(--border-color);
+			padding-bottom: 10px;
+			font-size: 24px;
+		}
+
+		.resume-section p,
+		.resume-section li {
+			font-size: 16px;
+			line-height: 1.8;
+		}
+
+		.resume-footer {
+			text-align: center;
+			padding: 20px;
+			border-top: 2px solid var(--border-color);
+			background-color: var(--footer-background);
+			font-size: 14px;
+		}
+
+		.experience {
+			background-color: var(--section-background);
+			padding: 30px;
+			border-radius: 10px;
+			margin-bottom: 40px;
+			box-shadow: 0 4px 8px var(--shadow-color);
+		}
+
+		.job-title {
+			font-size: 20px;
+			color: var(--text-color);
+			margin-bottom: 5px;
+		}
+
+		.job-date {
+			font-style: italic;
+			color: #666;
+			margin-bottom: 10px;
+		}
+
+		.job-position {
+			font-weight: bold;
+			color: var(--text-color);
+			margin-bottom: 15px;
+		}
+
+		.experience ul {
+			list-style-type: circle;
+			margin: 20px 0;
+			padding-left: 40px;
+		}
+
+		.experience li {
+			margin-bottom: 10px;
+		}
+
+		.education {
+			background-color: var(--section-background);
+			padding: 30px;
+			border-radius: 10px;
+			margin-bottom: 40px;
+			box-shadow: 0 4px 8px var(--shadow-color);
+		}
+
+		.education-title {
+			font-size: 20px;
+			color: var(--text-color);
+			margin-bottom: 5px;
+		}
+
+		.education-degree {
+			font-weight: bold;
+			color: #555;
+			margin-bottom: 10px;
+		}
+
+		.education-institution,
+		.education-date {
+			color: #777;
+			font-style: italic;
+			margin-bottom: 15px;
+		}
+
+		.education-entry:not(:last-child) {
+			margin-bottom: 30px;
+		}
+
+	</style>
 </head>
 <body>
-	
-	<div class="main-area center-text" style="background-image:url(images/countdown-3-1600x900.jpg);">
-		
-		<div class="display-table">
-			<div class="display-table-cell">
-				
-				<h1 class="title font-white"><b>Comming Soon</b></h1>
+<div class="resume-container">
+	<div class="resume-header">
+		<h1>Шарипов Марат Кайратович</h1>
+		<p>CTO | Fullstack Developer | 10+ лет опыта</p>
+<!--		<p>Адрес: ул. Момышулы, дом 18/1, кв 71, Астана 010000</p>-->
+		<p>Телефон: <a href="tel:+77075747640">+7 707 574 76 40</a></p>
+		<p>Email: <a href="mailto:marat@sharipov.kz">marat@sharipov.kz</a></p>
+	</div>
 
-				
-				
-				
-				
-			</div><!-- display-table -->
-		</div><!-- display-table-cell -->
-	</div><!-- main-area -->
-	
+	<!-- Hard Skills -->
+	<section class="resume-section hard-skills">
+		<h2>Профессиональные навыки</h2>
+		<ul class="skills-list">
+			<li><strong>Языки программирования:</strong> Профессиональное владение PHP, Python, Go и NodeJS.</li>
+			<li><strong>Клиент-серверная разработка:</strong> Глубокие знания и опыт создания масштабируемых высоконагруженных приложений</li>
+			<li><strong>Базы данных:</strong> Продвинутые навыки работы с MySQL и PostgreSQL, опыт оптимизации запросов и проектирования схем данных.</li>
+			<li><strong>Веб-технологии:</strong> Опыт работы с фреймворками Symfony, Laravel, Livewire, а также с библиотеками React и Vue.js, и фреймворком Django.</li>
+			<li><strong>Программирование:</strong> Понимание принципов объектно-ориентированного программирования (ООП) и применение паттернов проектирования для создания чистого и поддерживаемого кода.</li>
+			<li><strong>Версионный контроль:</strong> Продвинутое использование системы Git для управления исходным кодом, совместной работы, а также опыт работы с платформами, такими как GitHub, Gitlab для хостинга проектов, совместной разработки, отслеживания задач и ревью кода.</li>
+			<li><strong>Системное администрирование:</strong> Опыт настройки и обслуживания серверов на базе Linux, конфигурации веб-сервера Nginx, реализации решений для обеспечения высокой доступности (High Availability, HA) и оркестрации контейнеров с использованием Docker и Kubernetes.</li>
+		</ul>
+	</section>
+
+	<!-- Опыт работы -->
+	<section class="resume-section experience">
+		<h2>Опыт работы</h2>
+
+		<div class="job">
+			<h3 class="job-title">ТОО "Daitsuna Group", Астана</h3>
+			<p class="job-date">июнь 2020 - н.в.</p>
+			<p class="job-position">Должность: Директор</p>
+			<ul>
+				<li>Определение технической стратегии компании: разработка и реализация долгосрочного технического плана в соответствии с бизнес-целями.</li>
+				<li>Контроль за проектами: управление жизненным циклом проектов, включая сроки, бюджеты и качество исходного кода.</li>
+				<li>Инновации и исследования: управление исследовательской деятельности в команде для создания передовых технологических решений.</li>
+				<li>Оптимизация процессов: постоянное улучшение процессов разработки и эксплуатации ПО для повышения эффективности и сокращения затрат.</li>
+				<li>Управление IT-инфраструктурой: обеспечение надежности и безопасности IT-систем, сетей и данных компании.</li>
+				<li>Кризисное управление: оперативное решение технических проблем и непредвиденных ситуаций, минимизация времени простоев и потерь.</li>
+			</ul>
+		</div>
+
+		<div class="job">
+			<h3 class="job-title">АО "РТРК "Казахстан", Астана</h3>
+			<p class="job-date">январь 2017 - июнь 2020</p>
+			<p class="job-position">Должность: Программист</p>
+			<ul>
+				<li>Разработка и поддержка сайтов 4 основных и 14 региональных телеканалов: обеспечение технической исправности и актуализации контента.</li>
+				<li>Управление сервисными системами: разработка и интеграция дополнительных сервисов для повышения пользовательского опыта.</li>
+				<li>Поддержка онлайн-трансляций: управление потоковым вещанием и обеспечение его стабильности на всех сайтах компании.</li>
+				<li>Обслуживание Linux серверов: настройка, мониторинг и обеспечение безопасности серверных решений.</li>
+				<li>Администрирование баз данных: оптимизация запросов, настройка производительности и обеспечение целостности данных.</li>
+				<li>Управление системами хранения видеоконтента: разработка решений для хранения и доступа к видеоматериалам.</li>
+			</ul>
+		</div>
+
+		<div class="job">
+			<h3 class="job-title">АО "РТРК "Казахстан", Астана</h3>
+			<p class="job-date">сентябрь 2015 - январь 2017</p>
+			<p class="job-position">Должность: Специалист по мобильным приложениям</p>
+			<ul>
+				<li>Разработка и поддержка мобильного приложения компании: Обеспечение функциональности, производительности и масштабируемости приложения.</li>
+				<li>Написание бэкенда для мобильного приложения: Реализация серверных API, интеграция с базами данных и внешними сервисами.</li>
+				<li>Поддержка Linux серверов: Обеспечение бесперебойной работы и безопасности серверных решений на базе Linux.</li>
+				<li>Поддержка баз данных: Администрирование и оптимизация баз данных для гарантии быстродействия и надежности.</li>
+				<li>Системы хранения видеоконтента: Управление и масштабирование систем хранения видео для обеспечения доступности и отказоустойчивости.</li>
+			</ul>
+		</div>
+
+		<div class="job">
+			<h3 class="job-title">АО "РТРК "Казахстан", Астана</h3>
+			<p class="job-date">октябрь 2013 - сентябрь 2015</p>
+			<p class="job-position">Должность: Веб дизайнер</p>
+			<ul>
+				<li>Рисование плашек для телепередач: Создание визуальных концепций и дизайн-макетов для телевизионного контента, работа с графическими элементами и типографикой, адаптация стилей для различных программ.</li>
+				<li>Разработка дизайна для проектных страниц: Проектирование пользовательских интерфейсов для веб-сайтов и цифровых платформ, оптимизация дизайна для улучшения пользовательского опыта, создание прототипов и итераций дизайна в соответствии с требованиями проекта.</li>
+			</ul>
+		</div>
+
+		<!-- Повторите структуру выше для других мест работы -->
+	</section>
+
+
+	<!-- Образование и тренинги -->
+	<section class="resume-section education">
+		<h2>Образование</h2>
+
+		<div class="education-entry">
+			<h3 class="education-title">Факультет информационных технологий</h3>
+			<p class="education-degree">Специальность: Вычислительная техника и программное обеспечение</p>
+			<p class="education-institution">Карагандинский Государственный Технический Университет</p>
+			<p class="education-date">2009-2013</p>
+		</div>
+
+		<div class="education-entry">
+			<h3 class="education-title">Аттестат средней школы</h3>
+			<p class="education-institution">Республиканский Казахско-турецкий лицей-интернат для одаренных детей г. Караганды</p>
+			<p class="education-date">2005-2009</p>
+		</div>
+
+		<!-- Добавьте дополнительные курсы или сертификаты, если они у вас есть -->
+	</section>
+
+<!--	<div class="resume-footer">-->
+<!--		<p>Резюме создано и поддерживается Маратом Шариповым. Все права защищены.</p>-->
+<!--	</div>-->
+</div>
 </body>
 </html>
